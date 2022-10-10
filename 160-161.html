@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <title>160-161</title>
+    
+</head>
+<body>
+    <h1 id="heading">Привет, мир!</h1>
+    <script>
+        // задание с 160-161 стр
+        var leftOffest=0;
+        var moveHeading=function(){
+            $("#heading").offset({left:leftOffest});
+            leftOffest++;
+            if (leftOffest>200){
+            leftOffest=0;
+        }
+        
+    };
+    setInterval(moveHeading, 30);
+
+    </script>
+    <script src="js/app2.js"></script>
+</body>
+</html>
